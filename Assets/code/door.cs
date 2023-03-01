@@ -10,7 +10,12 @@ public class door : MonoBehaviour
     {
         if(other.gameObject.CompareTag("Player"))
         {
-            SceneManager.LoadScene(levelToLoad);
+            if(publicvar.haskey)
+            {
+                publicvar.haskey=false;
+                SceneManager.LoadScene(levelToLoad);
+            }
+            
         }
     }
 
