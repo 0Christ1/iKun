@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using System;
 public class player : MonoBehaviour
 {
     // Start is called before the first frame update
@@ -29,10 +30,12 @@ public class player : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        if(other.CompareTag("key0"))
+        if(other.CompareTag("key"))
         {
+            print(other.name.Substring(3));
+            int keynum = Int32.Parse(other.name.Substring(3));  //the format have to like key0 key1 key2 key3.
             Destroy(other.gameObject);
-            publicvar.haskey=true;
+            publicvar.haskey[keynum]=true;
         }
     }
 }
