@@ -2,26 +2,29 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
-
-public class bot : MonoBehaviour
+public class player : MonoBehaviour
 {
-    NavMeshAgent _navMeshAgent;
-    GameObject player;
     // Start is called before the first frame update
+    NavMeshAgent _navMeshAgent;
+    Camera mainCam;
     void Start()
     {
         _navMeshAgent = GetComponent<NavMeshAgent>();
-        player = GameObject.FindGameObjectWithTag("Player");
-        StartCoroutine(ChasePlayer());
+        mainCam = Camera.main;
     }
 
-    IEnumerator ChasePlayer()
+    // Update is called once per frame
+    void Update()
     {
-        while (true)
+        if(Input.GetMouseButtonDown(0)) //left click  1 = right click 2= middle
         {
-            yield return new WaitForSeconds(0.1f);
-            _navMeshAgent.destination = player.transform.position;
+            RaycastHit hit;
+            if(Physics.Raycast(mainCam.ScreenPointToRay(Input.mousePosition),out hit,200))
+            {
+                //print(hit.collider.gameObject.name);
+                print(hit.point);
+                _navMeshAgent.destination = hit.point;
+            }
         }
-
     }
 }
