@@ -11,6 +11,10 @@ public class bot : MonoBehaviour
 
     public GameObject EnemyBullet;
 
+    // public AudioClip shootingSound;
+
+    // AudioSource _audioSource;
+
     NavMeshAgent _navMeshAgent;
 
     GameObject player;
@@ -19,10 +23,14 @@ public class bot : MonoBehaviour
 
     void Start()
     {
+        // _audioSource = GetComponent<AudioSource>();
+
         _rigidbody = GetComponent<Rigidbody>();
         _navMeshAgent = GetComponent<NavMeshAgent>();
         player = GameObject.FindGameObjectWithTag("Player");
         StartCoroutine(ChasePlayer());
+
+        
     }
 
     IEnumerator ChasePlayer()
@@ -34,8 +42,11 @@ public class bot : MonoBehaviour
             Vector3 direction = (player.transform.position - spawnPoint.position).normalized;
 
             Vector3 force = direction * bulletSpeed;
+            
 
             Instantiate(EnemyBullet, spawnPoint.position, Quaternion.identity).GetComponent<Rigidbody>().AddForce(force, ForceMode.Impulse);
+
+            //_audioSource.PlayOneShot(shootingSound);
 
             yield return new WaitForSeconds(1f);  //0.1s
         }

@@ -6,6 +6,7 @@ TagManager:
   tags:
   - key
   - key0
+  - bullet
   layers:
   - Default
   - TransparentFX

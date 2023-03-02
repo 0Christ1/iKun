@@ -11,6 +11,7 @@ public class player : MonoBehaviour
     NavMeshAgent _navMeshAgent;
     Camera mainCam;
     public string levelToLoad;
+    // public GameObject explosion;
     void Start()
     {
         _navMeshAgent = GetComponent<NavMeshAgent>();
@@ -44,6 +45,12 @@ public class player : MonoBehaviour
             int keynum = Int32.Parse(other.name.Substring(3));  //the format have to like key0 key1 key2 key3.
             Destroy(other.gameObject);
             publicvar.haskey[keynum]=true;
+        }
+        else if(other.CompareTag("bullet"))
+        {
+            publicvar.life-=1;
+            print("HP-1");
+            Destroy(other.gameObject);
         }
     }
 }
