@@ -5,9 +5,9 @@ using UnityEngine.AI;
 
 public class bot : MonoBehaviour
 {
-    int bulletSpeed = 250;
+    int bulletSpeed = 10;
 
-    // public Transform spawnPoint;
+    public Transform spawnPoint;
 
     public GameObject EnemyBullet;
 
@@ -17,18 +17,12 @@ public class bot : MonoBehaviour
 
     Rigidbody _rigidbody;
 
-    Transform playerTransform;
-
-    Transform enemyTransform;
-
     void Start()
     {
         _rigidbody = GetComponent<Rigidbody>();
         _navMeshAgent = GetComponent<NavMeshAgent>();
         player = GameObject.FindGameObjectWithTag("Player");
         StartCoroutine(ChasePlayer());
-        enemyTransform = GetComponent<Transform>();
-        playerTransform = GameObject.Find("Player").GetComponent<Transform>();
     }
 
     IEnumerator ChasePlayer()
@@ -36,11 +30,14 @@ public class bot : MonoBehaviour
         while (true)
         {
             _navMeshAgent.destination = player.transform.position;
-            Vector3 direction = (playerTransform.position - transform.position).normalized;
+
+            Vector3 direction = (player.transform.position - spawnPoint.position).normalized;
+
             Vector3 force = direction * bulletSpeed;
 
-            Instantiate(EnemyBullet, enemyTransform.position, Quaternion.identity).GetComponent<Rigidbody>().AddForce(force, ForceMode.Impulse);
-            yield return new WaitForSeconds(1);  //0.1s
+            Instantiate(EnemyBullet, spawnPoint.position, Quaternion.identity).GetComponent<Rigidbody>().AddForce(force, ForceMode.Impulse);
+
+            yield return new WaitForSeconds(1f);  //0.1s
         }
     }
 
