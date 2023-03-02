@@ -19,9 +19,18 @@ public class bot : MonoBehaviour
     {
         while (true)
         {
-            yield return new WaitForSeconds(0.1f);
+            yield return new WaitForSeconds(1);  //0.1s
             _navMeshAgent.destination = player.transform.position;
         }
 
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.CompareTag("Player"))
+        {
+            publicvar.life-=1;
+            print("HP-1");
+        }
     }
 }

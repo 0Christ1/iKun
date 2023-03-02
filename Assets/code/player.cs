@@ -3,11 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 using System;
+
+using UnityEngine.SceneManagement;
 public class player : MonoBehaviour
 {
     // Start is called before the first frame update
     NavMeshAgent _navMeshAgent;
     Camera mainCam;
+    public string levelToLoad;
     void Start()
     {
         _navMeshAgent = GetComponent<NavMeshAgent>();
@@ -27,6 +30,11 @@ public class player : MonoBehaviour
                 _navMeshAgent.destination = hit.point;
             }
         }
+        if(publicvar.life<=0)
+        {
+            SceneManager.LoadScene(levelToLoad);
+        }
+
     }
     private void OnTriggerEnter(Collider other)
     {
@@ -39,3 +47,5 @@ public class player : MonoBehaviour
         }
     }
 }
+
+
