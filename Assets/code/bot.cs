@@ -5,24 +5,43 @@ using UnityEngine.AI;
 
 public class bot : MonoBehaviour
 {
+    int bulletSpeed = 250;
+
+    // public Transform spawnPoint;
+
+    public GameObject EnemyBullet;
+
     NavMeshAgent _navMeshAgent;
+
     GameObject player;
-    // Start is called before the first frame update
+
+    Rigidbody _rigidbody;
+
+    Transform playerTransform;
+
+    Transform enemyTransform;
+
     void Start()
     {
+        _rigidbody = GetComponent<Rigidbody>();
         _navMeshAgent = GetComponent<NavMeshAgent>();
         player = GameObject.FindGameObjectWithTag("Player");
         StartCoroutine(ChasePlayer());
+        enemyTransform = GetComponent<Transform>();
+        playerTransform = GameObject.Find("Player").GetComponent<Transform>();
     }
 
     IEnumerator ChasePlayer()
     {
         while (true)
         {
-            yield return new WaitForSeconds(1);  //0.1s
             _navMeshAgent.destination = player.transform.position;
-        }
+            Vector3 direction = (playerTransform.position - transform.position).normalized;
+            Vector3 force = direction * bulletSpeed;
 
+            Instantiate(EnemyBullet, enemyTransform.position, Quaternion.identity).GetComponent<Rigidbody>().AddForce(force, ForceMode.Impulse);
+            yield return new WaitForSeconds(1);  //0.1s
+        }
     }
 
     private void OnTriggerEnter(Collider other)
@@ -33,4 +52,5 @@ public class bot : MonoBehaviour
             print("HP-1");
         }
     }
+
 }
