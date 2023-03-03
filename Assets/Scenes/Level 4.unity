@@ -1196,7 +1196,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   locked: 1
-  levelToLoad: Level 2
+  levelToLoad: Level5
 --- !u!65 &1406801509
 BoxCollider:
   m_ObjectHideFlags: 0
