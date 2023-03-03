@@ -43,7 +43,7 @@ public class bot : MonoBehaviour
 
             _audioSource.Play();
 
-            yield return new WaitForSeconds(1f);  //0.1s
+            yield return new WaitForSeconds(3f);  //0.1s
         }
     }
 
