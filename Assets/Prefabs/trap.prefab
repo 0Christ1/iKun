@@ -142,4 +142,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d44a805619a94898ada3d282b0e10cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelToLoad: Fail
+  levelToLoad: FailPage

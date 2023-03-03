@@ -6,27 +6,27 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/MenuSence/StartPage.unity
+    path: Assets/Scenes/MenuSence/StartPage/StartPage.unity
     guid: e44f7dc94641d402e8893d6002f58378
   - enabled: 1
-    path: Assets/Scenes/level basic.unity
+    path: Assets/Scenes/Leve basic/level basic.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/Scenes/Level 3.unity
+    path: Assets/Scenes/Level 2/Level 2.unity
+    guid: 6b7237dabf7234d5391602af27bc38de
+  - enabled: 1
+    path: Assets/Scenes/Level 3/Level 3.unity
     guid: a44c0c1eaa55449e989cf67a1c047ba5
   - enabled: 1
-    path: Assets/Scenes/Level 4.unity
-    guid: 711cef4780763495580cd1074c1bf27e
+    path: Assets/Scenes/Level 4/Level 4.unity
+    guid: 6188f453034854f1d9f3db105842ab20
   - enabled: 1
-    path: Assets/Scenes/Level 5.unity
-    guid: 4c81980ab975647bba05a3709a41dbf5
+    path: Assets/Scenes/Level 5/Level 5.unity
+    guid: 3c3f7ef8261ce4b449aceb80ed35224b
   - enabled: 1
-    path: Assets/Scenes/fail.unity
-    guid: b5df35c45bb734eaba8dbe3ac1e73a6d
+    path: Assets/Scenes/Win/WinPage.unity
+    guid: 0b1906f01d5ae41baa2b9ec009faf8f4
   - enabled: 1
-    path: Assets/Scenes/Win.unity
-    guid: d48907990a73c409bae8365249f4c332
+    path: Assets/Scenes/Fail/FailPage.unity
+    guid: fc1bc1f9ab7064bdebf668d5d0d362e7
   m_configObjects: {}
