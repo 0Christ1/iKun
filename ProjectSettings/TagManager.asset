@@ -7,6 +7,7 @@ TagManager:
   - key
   - key0
   - bullet
+  - enemy
   layers:
   - Default
   - TransparentFX

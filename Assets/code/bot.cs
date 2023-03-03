@@ -11,26 +11,22 @@ public class bot : MonoBehaviour
 
     public GameObject EnemyBullet;
 
-    // public AudioClip shootingSound;
-
-    // AudioSource _audioSource;
-
     NavMeshAgent _navMeshAgent;
 
     GameObject player;
 
     Rigidbody _rigidbody;
 
+    AudioSource _audioSource;
+
     void Start()
     {
         // _audioSource = GetComponent<AudioSource>();
-
         _rigidbody = GetComponent<Rigidbody>();
         _navMeshAgent = GetComponent<NavMeshAgent>();
         player = GameObject.FindGameObjectWithTag("Player");
+        _audioSource = GetComponent<AudioSource>();
         StartCoroutine(ChasePlayer());
-
-        
     }
 
     IEnumerator ChasePlayer()
@@ -43,10 +39,9 @@ public class bot : MonoBehaviour
 
             Vector3 force = direction * bulletSpeed;
             
-
             Instantiate(EnemyBullet, spawnPoint.position, Quaternion.identity).GetComponent<Rigidbody>().AddForce(force, ForceMode.Impulse);
 
-            //_audioSource.PlayOneShot(shootingSound);
+            _audioSource.Play();
 
             yield return new WaitForSeconds(1f);  //0.1s
         }
@@ -60,5 +55,4 @@ public class bot : MonoBehaviour
             print("HP-1");
         }
     }
-
 }

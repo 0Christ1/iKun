@@ -12,9 +12,13 @@ public class player : MonoBehaviour
     Camera mainCam;
     public string levelToLoad;
     // public GameObject explosion;
+
+    AudioSource _audioSource;
+
     void Start()
     {
         _navMeshAgent = GetComponent<NavMeshAgent>();
+        _audioSource = GetComponent<AudioSource>();
         mainCam = Camera.main;
     }
 
@@ -49,8 +53,13 @@ public class player : MonoBehaviour
         else if(other.CompareTag("bullet"))
         {
             publicvar.life-=1;
+            // _audioSource.Play();
             print("HP-1");
             Destroy(other.gameObject);
+        }
+        else if(other.CompareTag("enemy"))
+        {
+            _audioSource.Play();
         }
     }
 }
