@@ -6,9 +6,27 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/StartScreen.unity
-    guid: 9786d7aa37e95f9428325e38f8c9ff78
+    path: Assets/Scenes/MenuSence/StartPage/StartPage.unity
+    guid: e44f7dc94641d402e8893d6002f58378
   - enabled: 1
-    path: Assets/Scenes/Level 1.unity
-    guid: ce93df88e82bbb2439062382bbb282d4
+    path: Assets/Scenes/Leve basic/level basic.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/Level 2/Level 2.unity
+    guid: 6b7237dabf7234d5391602af27bc38de
+  - enabled: 1
+    path: Assets/Scenes/Level 3/Level 3.unity
+    guid: a44c0c1eaa55449e989cf67a1c047ba5
+  - enabled: 1
+    path: Assets/Scenes/Level 4/Level 4.unity
+    guid: 6188f453034854f1d9f3db105842ab20
+  - enabled: 1
+    path: Assets/Scenes/Level 5/Level 5.unity
+    guid: 3c3f7ef8261ce4b449aceb80ed35224b
+  - enabled: 1
+    path: Assets/Scenes/Win/WinPage.unity
+    guid: 0b1906f01d5ae41baa2b9ec009faf8f4
+  - enabled: 1
+    path: Assets/Scenes/Fail/FailPage.unity
+    guid: fc1bc1f9ab7064bdebf668d5d0d362e7
   m_configObjects: {}
