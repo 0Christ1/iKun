@@ -48,7 +48,7 @@ public class boss_2 : MonoBehaviour
             Instantiate(Trap, spawnPoint.position, Quaternion.identity);
             _audioSource.Play();
 
-            yield return new WaitForSeconds(2f);  //0.1s
+            yield return new WaitForSeconds(7f);  //0.1s
         }
     }
 
