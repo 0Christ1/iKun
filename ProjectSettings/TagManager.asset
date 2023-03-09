@@ -8,6 +8,9 @@ TagManager:
   - key0
   - bullet
   - enemy
+  - enemy
+  - enemy
+  - shit
   layers:
   - Default
   - TransparentFX

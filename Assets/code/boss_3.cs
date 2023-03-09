@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class boss_2 : MonoBehaviour
+public class boss_3 : MonoBehaviour
 {
     int bulletSpeed = 10;
 
@@ -11,7 +11,7 @@ public class boss_2 : MonoBehaviour
 
     public GameObject EnemyBullet;
 
-    public GameObject Trap;
+    public GameObject Shit;
 
 
 
@@ -45,10 +45,10 @@ public class boss_2 : MonoBehaviour
             
             // Instantiate(EnemyBullet, spawnPoint.position, Quaternion.identity).GetComponent<Rigidbody>().AddForce(force, ForceMode.Impulse);
 
-            Instantiate(Trap, spawnPoint.position, Quaternion.identity);
+            Instantiate(Shit, spawnPoint.position, Quaternion.identity);
             _audioSource.Play();
 
-            yield return new WaitForSeconds(15f);  //0.1s
+            yield return new WaitForSeconds(7f);  //0.1s
         }
     }
 
