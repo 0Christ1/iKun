@@ -14,6 +14,8 @@ public class player : MonoBehaviour
     // public GameObject explosion;
 
     AudioSource _audioSource;
+    AudioClip ganma;
+    AudioClip shit;
 
     void Start()
     {
