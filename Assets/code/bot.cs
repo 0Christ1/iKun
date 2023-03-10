@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.SceneManagement;
 
 public class bot : MonoBehaviour
 {
@@ -38,8 +39,12 @@ public class bot : MonoBehaviour
             Vector3 direction = (player.transform.position - spawnPoint.position).normalized;
 
             Vector3 force = direction * bulletSpeed;
+
+            if (SceneManager.GetActiveScene().name != "Level 7 GA"){
+                Instantiate(EnemyBullet, spawnPoint.position, Quaternion.identity).GetComponent<Rigidbody>().AddForce(force, ForceMode.Impulse);
+            }
             
-            Instantiate(EnemyBullet, spawnPoint.position, Quaternion.identity).GetComponent<Rigidbody>().AddForce(force, ForceMode.Impulse);
+            //Instantiate(EnemyBullet, spawnPoint.position, Quaternion.identity).GetComponent<Rigidbody>().AddForce(force, ForceMode.Impulse);
 
             _audioSource.Play();
 
