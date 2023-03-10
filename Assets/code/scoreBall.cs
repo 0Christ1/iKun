@@ -17,21 +17,9 @@ public class scoreBall : MonoBehaviour
     private void Start()
     {     
         basketball = GameObject.FindGameObjectWithTag("bullet");  
-        scoreUI.text = "Goals Made:" + score;
         _audioSource = GetComponent<AudioSource>();
     }
-
-    public void newScore(int points){
-        score += points;
-        scoreUI.text = "Goals Made:" + score;
-    }
-
-    void Update()
-    {
-        if (score == 4){
-            publicvar.madeGoals = true;
-        }
-    }
+    
 
     private void OnTriggerEnter(Collider other)
     {
@@ -40,7 +28,6 @@ public class scoreBall : MonoBehaviour
         {   
             // game_manager.AddScore(point_value);
             Instantiate(explosion,transform.position,Quaternion.identity);
-            newScore(1);
             _audioSource.PlayOneShot(clip);
             Destroy(other.gameObject);
             

@@ -23,7 +23,9 @@ public class door : MonoBehaviour
                 SceneManager.LoadScene(levelToLoad);
             }
             else if (publicvar.madeGoals == true){
+                locked = false;
                 SceneManager.LoadScene(levelToLoad);
+                locked = true;
                 publicvar.madeGoals = false;
             }
             
