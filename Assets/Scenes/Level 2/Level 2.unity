@@ -1275,14 +1275,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.4710889, y: 0, z: 0, w: 0.8820858}
-  m_LocalPosition: {x: -8.1, y: 15.4, z: 3.31}
+  m_LocalRotation: {x: 0.33133793, y: 0, z: 0, w: 0.94351214}
+  m_LocalPosition: {x: -8.1, y: 9.5, z: 3.31}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 56.21, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 38.7, y: 0, z: 0}
 --- !u!114 &963194229
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2772,6 +2772,10 @@ PrefabInstance:
       propertyPath: EnemyBullet
       value: 
       objectReference: {fileID: 2286383800851233557, guid: fe0b673b336e54cf0b5708af125b5245, type: 3}
+    - target: {fileID: 283884535030597317, guid: 5e7aca60a2c654db68c01a1b156e76bf, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 283884535030597318, guid: 5e7aca60a2c654db68c01a1b156e76bf, type: 3}
       propertyPath: m_Radius
       value: 0.2
@@ -2833,6 +2837,10 @@ PrefabInstance:
       propertyPath: EnemyBullet
       value: 
       objectReference: {fileID: 2286383800851233557, guid: fe0b673b336e54cf0b5708af125b5245, type: 3}
+    - target: {fileID: 283884535030597317, guid: 5e7aca60a2c654db68c01a1b156e76bf, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 283884535030597318, guid: 5e7aca60a2c654db68c01a1b156e76bf, type: 3}
       propertyPath: m_Radius
       value: 0.2
