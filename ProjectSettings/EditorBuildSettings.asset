@@ -38,4 +38,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Win/WinPage.unity
     guid: 0b1906f01d5ae41baa2b9ec009faf8f4
+  - enabled: 1
+    path: Assets/Scenes/Level 7 GA/Level 7 GA.unity
+    guid: 6cd75a07d8ed9ee49b71755bde02498e
   m_configObjects: {}
