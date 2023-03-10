@@ -12,6 +12,7 @@ public class door : MonoBehaviour
     {
         if(other.gameObject.CompareTag("Player"))
         {
+            
             if(!locked)
             {
                 SceneManager.LoadScene(levelToLoad);
@@ -20,6 +21,10 @@ public class door : MonoBehaviour
             {
                 publicvar.haskey[keynum]=false;
                 SceneManager.LoadScene(levelToLoad);
+            }
+            else if (publicvar.madeGoals == true){
+                SceneManager.LoadScene(levelToLoad);
+                publicvar.madeGoals = false;
             }
             
         }
