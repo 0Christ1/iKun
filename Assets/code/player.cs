@@ -39,7 +39,8 @@ public class player : MonoBehaviour
         }
         if(publicvar.life<=0)
         {
-            SceneManager.LoadScene(levelToLoad);
+            //SceneManager.LoadScene(levelToLoad);
+            SceneManager.LoadScene("FailPage");
         }
 
     }
