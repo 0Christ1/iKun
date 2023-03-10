@@ -1701,7 +1701,7 @@ ParticleSystem:
     m_BurstCount: 0
     m_Bursts: []
   SizeModule:
-    enabled: 0
+    enabled: 1
     curve:
       serializedVersion: 2
       minMaxState: 1
@@ -1711,19 +1711,19 @@ ParticleSystem:
         serializedVersion: 2
         m_Curve:
         - serializedVersion: 3
-          time: 0
-          value: 0
+          time: 0.043815613
+          value: 1
           inSlope: 0
-          outSlope: 1
+          outSlope: 0
           tangentMode: 0
           weightedMode: 0
           inWeight: 0.33333334
           outWeight: 0.33333334
         - serializedVersion: 3
-          time: 1
-          value: 1
+          time: 0.97421265
+          value: 0
           inSlope: 1
-          outSlope: 0
+          outSlope: 1
           tangentMode: 0
           weightedMode: 0
           inWeight: 0.33333334
@@ -5475,14 +5475,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 361924519}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 9.21, y: -0.14, z: -10.96}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0.636634, y: -0.5871092, z: -0.33896765, w: 0.3675608}
+  m_LocalPosition: {x: 12.600001, y: -16.299997, z: -18.599998}
+  m_LocalScale: {x: 0.6666667, y: 3.3333335, z: 3.3333335}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 14
-  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+  m_Father: {fileID: 1894901142}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: -120, y: 0, z: -85.36499}
 --- !u!1 &368571987
 GameObject:
   m_ObjectHideFlags: 0
@@ -6679,7 +6679,7 @@ ParticleSystem:
     m_BurstCount: 0
     m_Bursts: []
   SizeModule:
-    enabled: 0
+    enabled: 1
     curve:
       serializedVersion: 2
       minMaxState: 1
@@ -6689,19 +6689,19 @@ ParticleSystem:
         serializedVersion: 2
         m_Curve:
         - serializedVersion: 3
-          time: 0
-          value: 0
+          time: 0.0077323914
+          value: 1
           inSlope: 0
-          outSlope: 1
+          outSlope: 0
           tangentMode: 0
           weightedMode: 0
           inWeight: 0.33333334
           outWeight: 0.33333334
         - serializedVersion: 3
-          time: 1
-          value: 1
+          time: 0.9845276
+          value: 0
           inSlope: 1
-          outSlope: 0
+          outSlope: 1
           tangentMode: 0
           weightedMode: 0
           inWeight: 0.33333334
@@ -10453,14 +10453,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 569611853}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -10.05, y: -0.12, z: -3.48}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0.5670427, y: -0.6545706, z: -0.37791649, w: 0.32738224}
+  m_LocalPosition: {x: -12.780002, y: 8.799998, z: 25}
+  m_LocalScale: {x: 0.6666667, y: 3.3333335, z: 3.3333335}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 15
-  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+  m_Father: {fileID: 1203157175}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: -120, y: 0, z: -98.195984}
 --- !u!1 &616568069
 GameObject:
   m_ObjectHideFlags: 0
@@ -11002,6 +11002,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1049745997}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1203157175 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5588832895042643604, guid: 10b4a6696ac1d4c039d9fd37b8448c49, type: 3}
+  m_PrefabInstance: {fileID: 5588832895658808215}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1228715654
 GameObject:
   m_ObjectHideFlags: 0
@@ -12185,6 +12190,11 @@ Transform:
   m_Father: {fileID: 318014912}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1894901142 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7832661261629393896, guid: 889ddedb7ab864464ac0f186bfd2aea3, type: 3}
+  m_PrefabInstance: {fileID: 800237453}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2100855895
 GameObject:
   m_ObjectHideFlags: 0
