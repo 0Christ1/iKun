@@ -15,9 +15,9 @@ public class cameraFollow : MonoBehaviour
 
     private void LateUpdate()
     {
-        //camera rotate on z axis and keep moving with player
         Vector3 newPos = transform.position;
         newPos.z = player.transform.position.z + offset.z;
+        newPos.x = player.transform.position.x + offset.x;
         newPos.y = player.transform.position.y + offset.y;
         transform.position = newPos;
         transform.LookAt(player.transform);
