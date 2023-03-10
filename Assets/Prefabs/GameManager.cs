@@ -28,7 +28,7 @@ public class GameManager : MonoBehaviour
     }
     private void Start()
     {
-        // scoreUI.text = " LIFE: " + publicvar.life;
+        scoreUI.text = " LIFE: " + publicvar.life;
     }
     // public void AddScore(int points)
     // {

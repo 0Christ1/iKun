@@ -105,7 +105,7 @@ CapsuleCollider:
   m_GameObject: {fileID: 283884535030597315}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   m_Radius: 0.2
   m_Height: 0.5
   m_Direction: 1
@@ -283,7 +283,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnPoint: {fileID: 7256612673789541408}
-  EnemyBullet: {fileID: 2852046289962528542, guid: e6cb40096f3944ba39f611ecc9460cc5, type: 3}
+  EnemyBullet: {fileID: 2286383800851233557, guid: fe0b673b336e54cf0b5708af125b5245, type: 3}
 --- !u!33 &283884535030597325
 MeshFilter:
   m_ObjectHideFlags: 0
