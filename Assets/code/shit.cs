@@ -21,8 +21,12 @@ public class shit : MonoBehaviour
         if(other.CompareTag("Player"))
         {
             _audioSource.Play();
+            publicvar.life-=5;
+   
+            // _audioSource.Play();
+            print("HP-1");
             // new WaitForSeconds(5f);
-            Destroy(gameObject);
+            // Destroy(gameObject);
         }
     }
 }

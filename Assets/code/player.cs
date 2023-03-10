@@ -56,6 +56,7 @@ public class player : MonoBehaviour
         else if(other.CompareTag("bullet"))
         {
             publicvar.life-=1;
+            _audioSource.Play();
             // _audioSource.Play();
             print("HP-1");
             Destroy(other.gameObject);
