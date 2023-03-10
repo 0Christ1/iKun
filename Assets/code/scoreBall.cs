@@ -6,6 +6,8 @@ using TMPro;
 
 public class scoreBall : MonoBehaviour
 {
+
+    GameObject basketball;
     public GameObject explosion;
     int score = 0;
     public TextMeshProUGUI scoreUI;
@@ -13,7 +15,8 @@ public class scoreBall : MonoBehaviour
     public AudioClip clip;
 
     private void Start()
-    {       
+    {     
+        basketball = GameObject.FindGameObjectWithTag("bullet");  
         scoreUI.text = "Goals Made:" + score;
         _audioSource = GetComponent<AudioSource>();
     }
@@ -22,8 +25,6 @@ public class scoreBall : MonoBehaviour
         score += points;
         scoreUI.text = "Goals Made:" + score;
     }
-
-    
 
     void Update()
     {
@@ -38,7 +39,6 @@ public class scoreBall : MonoBehaviour
         if(other.CompareTag("goal"))
         {   
             // game_manager.AddScore(point_value);
-            
             Instantiate(explosion,transform.position,Quaternion.identity);
             newScore(1);
             _audioSource.PlayOneShot(clip);

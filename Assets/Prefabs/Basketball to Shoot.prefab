@@ -143,7 +143,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosion: {fileID: 3453027539257091880, guid: 88c24e27588614d86a5e5181ab6cea3a, type: 3}
-  scoreUI: {fileID: 5986672574102416000, guid: 68ce349fbc6ffe640b36b84964b55873, type: 3}
+  scoreUI: {fileID: 0}
   clip: {fileID: 8300000, guid: 68a95c31893cc4e7db6f07cb9245c7d0, type: 3}
 --- !u!82 &-6980380429458317836
 AudioSource:
