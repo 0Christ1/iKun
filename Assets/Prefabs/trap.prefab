@@ -45,7 +45,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d44a805619a94898ada3d282b0e10cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelToLoad: EndPage
+  levelToLoad: Fail
 --- !u!1 &2181735384685185898
 GameObject:
   m_ObjectHideFlags: 0
@@ -156,4 +156,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d44a805619a94898ada3d282b0e10cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelToLoad: FailPage
+  levelToLoad: Fail

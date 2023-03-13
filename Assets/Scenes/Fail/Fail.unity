@@ -122,7 +122,7 @@ NavMeshSettings:
     preserveTilesOutsideBounds: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 23800000, guid: f32eb5e74ed6e48588aefe09fd085dfb, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: d73d2ca89efd94f0f8ecc4f448e92ef6, type: 2}
 --- !u!1 &307659349
 GameObject:
   m_ObjectHideFlags: 0
@@ -5362,7 +5362,7 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30

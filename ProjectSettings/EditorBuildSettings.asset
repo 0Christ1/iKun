@@ -6,8 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/MenuSence/StartPage/StartPage.unity
-    guid: e44f7dc94641d402e8893d6002f58378
+    path: Assets/Scenes/MenuSence/Start/StartPage.unity
+    guid: 1f543f22a0713463f9b82dfe6a012967
   - enabled: 1
     path: Assets/Scenes/Leve basic/level basic.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
@@ -23,12 +23,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level 5/Level 5.unity
     guid: 3c3f7ef8261ce4b449aceb80ed35224b
-  - enabled: 1
-    path: Assets/Scenes/MenuSence/EndPage/EndPage.unity
-    guid: e5fb4e127e1514cd2b739e2de3b95ca4
-  - enabled: 1
-    path: Assets/Scenes/Fail/FailPage.unity
-    guid: fc1bc1f9ab7064bdebf668d5d0d362e7
   - enabled: 1
     path: Assets/Scenes/Fail/Fail.unity
     guid: f46171340bf9944bfa82e9ad8c8c18fc
