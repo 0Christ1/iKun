@@ -10444,7 +10444,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1762791180325446608, guid: f58cea51bb89c465bbbc46dddd8d7174, type: 3}
       propertyPath: levelToLoad
-      value: EndPage
+      value: Fail
       objectReference: {fileID: 0}
     - target: {fileID: 1762791180325446612, guid: f58cea51bb89c465bbbc46dddd8d7174, type: 3}
       propertyPath: m_RootOrder
