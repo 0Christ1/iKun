@@ -24,9 +24,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Level 5/Level 5.unity
     guid: 3c3f7ef8261ce4b449aceb80ed35224b
   - enabled: 1
-    path: Assets/Scenes/Fail/Fail.unity
-    guid: f46171340bf9944bfa82e9ad8c8c18fc
-  - enabled: 1
     path: Assets/Scenes/boss/boss.unity
     guid: 0d5d4b18f6d8747a3b576d7bc7b02fe1
   - enabled: 1
@@ -35,4 +32,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level 7 GA/Level 7 GA.unity
     guid: 6cd75a07d8ed9ee49b71755bde02498e
+  - enabled: 1
+    path: Assets/Scenes/Fail/Fail.unity
+    guid: f46171340bf9944bfa82e9ad8c8c18fc
   m_configObjects: {}
