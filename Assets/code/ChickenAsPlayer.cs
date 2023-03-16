@@ -31,7 +31,7 @@ public class ChickenAsPlayer : MonoBehaviour
         mainCam = Camera.main;
         animator = GetComponent<Animator>();
 
-        player = GameObject.FindGameObjectWithTag("Player");
+        player = GameObject.FindGameObjectWithTag("player");
         _rigidbody = GetComponent<Rigidbody>();
     }
 
@@ -74,7 +74,7 @@ public class ChickenAsPlayer : MonoBehaviour
 
         if(publicvar.life<=0)
         {
-            SceneManager.LoadScene(levelToLoad);
+            SceneManager.LoadScene("Fail");
         }
 
         if (Input.GetButtonDown("Jump")){

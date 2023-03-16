@@ -26,27 +26,15 @@ public class GameManager : MonoBehaviour
         }
 
     }
-    private void Start()
-    {
-        //scoreUI.text = " LIFE: " + publicvar.life;
-    }
 
     public void AddScore(int points)
     {
         score += points;
-        //scoreUI.text = " LIFE: " + publicvar.life;
-
     }
-    // public void KillLife()
-    // {
-    //     life -= 1;
-    //     scoreUI.text = "SCORE: " + score +" LIFE: " + life;
-
-    // }
-    // Update is called once per frame
+    
     public void Update()
     {
-        //scoreUI.text = " LIFE: " + publicvar.life;
+        
 #if !UNITY_WEBGL
         if(Input.GetKeyDown(KeyCode.Escape))
         {
