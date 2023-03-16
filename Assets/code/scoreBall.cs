@@ -32,5 +32,11 @@ public class scoreBall : MonoBehaviour
             Destroy(other.gameObject);
             
         }
+        // if(other.CompareTag("enemy"))
+        // {
+        //     Instantiate(explosion,transform.position,Quaternion.identity);
+        //     _audioSource.PlayOneShot(clip);
+        //     Destroy(other.gameObject);
+        // }
     }
 }

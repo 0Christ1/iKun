@@ -14,11 +14,13 @@ public class bullet : MonoBehaviour
             Instantiate(explosion,transform.position,Quaternion.identity);
             Destroy(gameObject);
         }
-        else if(other.CompareTag("bullet"))
+        else if(other.CompareTag("enemy"))
         {   
             // game_manager.AddScore(point_value);
             Instantiate(explosion,transform.position,Quaternion.identity);
+            Destroy(other.gameObject);
             Destroy(gameObject);
         }
     }
+    
 }

@@ -20,6 +20,10 @@ public class bot : MonoBehaviour
 
     AudioSource _audioSource;
 
+    //
+    
+    //
+
     void Start()
     {
         // _audioSource = GetComponent<AudioSource>();
@@ -28,6 +32,7 @@ public class bot : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player");
         _audioSource = GetComponent<AudioSource>();
         StartCoroutine(ChasePlayer());
+
     }
 
     IEnumerator ChasePlayer()
@@ -48,7 +53,7 @@ public class bot : MonoBehaviour
 
             _audioSource.Play();
 
-            yield return new WaitForSeconds(2f);  //0.1s
+            yield return new WaitForSeconds(4f);  //0.1s
         }
     }
 
@@ -59,5 +64,13 @@ public class bot : MonoBehaviour
             publicvar.life-=1;
             print("HP-1");
         }
+        if(other.CompareTag("bullet"))
+        {
+            print("hit");
+            GameObject.Find("GameManager").GetComponent<GameManager>().AddScore(10);
+            Destroy(gameObject);
+        }
     }
+
+    
 }

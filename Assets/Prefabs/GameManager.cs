@@ -9,8 +9,8 @@ using System;
 public class GameManager : MonoBehaviour
 {
     // Start is called before the first frame update
-    private int score = 0;
-    private int life = 3;
+    public int score = 0;
+    //private int life = 3;
     public TextMeshProUGUI scoreUI;
 
     private void Awake()
@@ -28,14 +28,15 @@ public class GameManager : MonoBehaviour
     }
     private void Start()
     {
-        scoreUI.text = " LIFE: " + publicvar.life;
+        //scoreUI.text = " LIFE: " + publicvar.life;
     }
-    // public void AddScore(int points)
-    // {
-    //     score += points;
-    //     scoreUI.text = " LIFE: " + publicvar.life;
 
-    // }
+    public void AddScore(int points)
+    {
+        score += points;
+        //scoreUI.text = " LIFE: " + publicvar.life;
+
+    }
     // public void KillLife()
     // {
     //     life -= 1;
@@ -45,7 +46,7 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     public void Update()
     {
-        scoreUI.text = " LIFE: " + publicvar.life;
+        //scoreUI.text = " LIFE: " + publicvar.life;
 #if !UNITY_WEBGL
         if(Input.GetKeyDown(KeyCode.Escape))
         {
