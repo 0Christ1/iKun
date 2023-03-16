@@ -12,6 +12,7 @@ TagManager:
   - enemy
   - shit
   - goal
+  - playerBullet
   layers:
   - Default
   - TransparentFX

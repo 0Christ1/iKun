@@ -16,7 +16,7 @@ public class canvas : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        scoreText.text = "Score: " + manager.score + "\n life: "+ publicvar.life;
+        scoreText.text = "Score: " + manager.score + "\nlife: "+ publicvar.life;
 
     }
 

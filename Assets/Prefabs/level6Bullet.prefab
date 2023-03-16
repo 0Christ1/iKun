@@ -9,7 +9,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2286383800851233557, guid: fe0b673b336e54cf0b5708af125b5245, type: 3}
       propertyPath: m_Name
-      value: Basketball
+      value: level6Bullet
+      objectReference: {fileID: 0}
+    - target: {fileID: 2286383800851233557, guid: fe0b673b336e54cf0b5708af125b5245, type: 3}
+      propertyPath: m_TagString
+      value: playerBullet
       objectReference: {fileID: 0}
     - target: {fileID: 7110914600971581556, guid: fe0b673b336e54cf0b5708af125b5245, type: 3}
       propertyPath: m_RootOrder

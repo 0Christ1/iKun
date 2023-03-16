@@ -15,7 +15,7 @@ public class ChickenAsPlayer : MonoBehaviour
 
     AudioSource _audioSource;
     AudioClip ganma;
-    //public Transform agent;
+    
     private int mouseClickCount = 0;
     //player can shoot basketball
     public GameObject basketballPrefab;

@@ -64,7 +64,7 @@ public class bot : MonoBehaviour
             publicvar.life-=1;
             print("HP-1");
         }
-        if(other.CompareTag("bullet"))
+        if(other.CompareTag("playerBullet"))
         {
             print("hit");
             GameObject.Find("GameManager").GetComponent<GameManager>().AddScore(10);
