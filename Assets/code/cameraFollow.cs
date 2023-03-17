@@ -6,7 +6,7 @@ public class cameraFollow : MonoBehaviour
 {
     // Make camera always asyc with the player
     GameObject player;
-    Vector3 offset;
+    public Vector3 offset;
     private void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");

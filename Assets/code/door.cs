@@ -15,16 +15,17 @@ public class door : MonoBehaviour
             
             if(!locked)
             {
-                SceneManager.LoadScene(levelToLoad);
+                SceneManager.LoadSceneAsync(levelToLoad);
             }
-            else if(publicvar.haskey[0] &&publicvar.haskey[1] )
+            else if(publicvar.haskey[0] && publicvar.haskey[1] )
             {
-                publicvar.haskey[keynum]=false;
-                SceneManager.LoadScene(levelToLoad);
+                publicvar.haskey[0]=false;
+                publicvar.haskey[1]=false;
+                SceneManager.LoadSceneAsync(levelToLoad);
             }
             else if (publicvar.madeGoals == true){
                 locked = false;
-                SceneManager.LoadScene(levelToLoad);
+                SceneManager.LoadSceneAsync(levelToLoad);
                 locked = true;
                 publicvar.madeGoals = false;
             }

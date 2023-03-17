@@ -74,6 +74,7 @@ public class ChickenAsPlayer : MonoBehaviour
 
         if(publicvar.life<=0)
         {
+            publicvar.life = 1;
             SceneManager.LoadScene("Fail");
         }
 

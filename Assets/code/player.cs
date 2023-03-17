@@ -40,7 +40,8 @@ public class player : MonoBehaviour
         if(publicvar.life<=0)
         {
             //SceneManager.LoadScene(levelToLoad);
-            SceneManager.LoadScene("Fail");
+            publicvar.life = 20;
+            SceneManager.LoadSceneAsync("Fail");
         }
 
     }

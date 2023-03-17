@@ -11,6 +11,7 @@ public class trap : MonoBehaviour
     {
         if(other.gameObject.CompareTag("Player"))
         {
+            publicvar.life = 20;
             SceneManager.LoadScene(levelToLoad);
         }
     }

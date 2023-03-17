@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44655824, g: 0.4963932, b: 0.5748082, a: 1}
+  m_IndirectSpecularColor: {r: 0.44050813, g: 0.48912084, b: 0.5692704, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -10823,15 +10823,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.16934954, y: 0, z: 0, w: 0.98555607}
-  m_LocalPosition: {x: -9.7, y: 4, z: 6.29}
+  m_LocalRotation: {x: 0.25177035, y: 0.6680512, z: -0.25844947, w: 0.65078664}
+  m_LocalPosition: {x: -12.35, y: 5.8, z: 11.49}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 705507995}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 19.5, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 42.3, y: 91.5, z: 0}
 --- !u!114 &963194229
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10844,6 +10844,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad09ee578c03a413889d3cb8148f1d37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  offset: {x: 0, y: 0, z: 0}
 --- !u!1001 &976962878
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10955,7 +10956,7 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
+  MinDistance: 0.5090513
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
@@ -11067,7 +11068,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1109185672}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -11111,7 +11112,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1109185672}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.5
+  m_Radius: 0.4
   m_Speed: 6
   m_Acceleration: 8
   avoidancePriority: 50
@@ -11817,6 +11818,10 @@ PrefabInstance:
     - target: {fileID: 283884535030597317, guid: 5e7aca60a2c654db68c01a1b156e76bf, type: 3}
       propertyPath: m_audioClip
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 283884535030597321, guid: 5e7aca60a2c654db68c01a1b156e76bf, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 283884535030597324, guid: 5e7aca60a2c654db68c01a1b156e76bf, type: 3}
       propertyPath: m_RootOrder
